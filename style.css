@@ -1,0 +1,12 @@
+.row {
+    margin-top: 20pt;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.btn-sm {
+    margin-left: 240pt;
+    margin-right: 100pt;
+    width: 40%;
+}

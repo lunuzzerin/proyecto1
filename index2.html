@@ -16,26 +16,74 @@
     <div class="container">
         <div style="text-align: center;">
             <h2>Ejercicios Taller JS</h2>
+            <span>Click en los input para arrojar resultado a la pregunta</span>
         </div>
+        <!-- Ejercicio Cinco -->
         <div class="row">
             <label for="">5. Si pepito tiene 20 años, mostrar en qué año nació pepito.</label>
-            <button onclick="ejercicioCinco();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+            <div class="col">
+                <label for="pepito5" class="form-label">Edad</label>
+                <input type="number" class="form-control" onkeyup="ejercicioCinco()" id="pepito5">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Año Nacimiento</label>
+                <input type="number" class="form-control" onclick="ejercicioCinco('1')" readonly id="resultado5">
+            </div>
+
         </div>
+        <!-- Ejercicio Seis -->
         <div class="row">
             <label for="">6. Si tengo un rectángulo que mide 5 metros de largo por 8 de ancho, mostrar cuál es el área de ese rectángulo.</label>
-            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+            <div class="col">
+                <label for="pepito5" class="form-label">Ancho</label>
+                <input type="number" class="form-control" onkeyup="ejercicioSeis()" id="base6">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Largo</label>
+                <input type="number" class="form-control" onkeyup="ejercicioSeis()" id="altura6">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Área</label>
+                <input type="number" class="form-control" onclick="ejercicioSeis('1')" readonly id="resultado6">
+            </div>
         </div>
+        <!-- Ejercicio Siete -->
         <div class="row">
             <label for="">7. Maria quiere ir a cine, y la entrada cuesta 8500, pero ella sólo tiene 6700, mostrar en pantalla cuánto dinero le hace falta para entrar a cine.</label>
-            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+            <div class="col">
+                <label for="pepito5" class="form-label">Mi Dinero</label>
+                <input type="number" class="form-control" onkeyup="ejercicioSiete()" id="dinero7">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Valor Entrada</label>
+                <input type="number" class="form-control" onkeyup="ejercicioSiete()" id="entrada7">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Resultado</label>
+                <input type="number" class="form-control" onclick="ejercicioSiete('1')" readonly id="resultado7">
+            </div>
         </div>
+        <!-- Ejercicio Ocho -->
         <div class="row">
             <label for="">8. Juan quiere invitar a sus amigos al estadio para ver fútbol, las boletas cuestan 8000 pesos, pregúntele a Juan cuánto dinero tiene, y muestre en pantalla cuántas personas puede invitar al estadio. (ejemplo: si tiene 20.000 sólo puede invitar a 2 personas).</label>
-            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+            <div class="col">
+                <label for="pepito5" class="form-label">Mi Dinero</label>
+                <input type="number" class="form-control" onkeyup="ejercicioOcho()" id="dinero8">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Valor Entrada</label>
+                <input type="number" class="form-control" onkeyup="ejercicioOcho()" value="8000" id="entrada8">
+            </div>
+            <div class="col">
+                <label for="resultado5" class="form-label">Resultado</label>
+                <input type="number" class="form-control" onclick="ejercicioOcho('1')" readonly id="resultado8">
+            </div>
         </div>
         <div style="text-align: left; margin-top: 10pt;">
-            <a href="index.html" class="btn btn-primary"><- Volver</a>
+            <a href="index.html" class="btn btn-primary"><- Volver</a><a href="main.js" target="_blank" class="btn btn-primary" style="margin-left: 10pt;">Ver JS</a>
         </div>
     </div>
 </body>
 </html>
+
+<script src="main.js"></script>

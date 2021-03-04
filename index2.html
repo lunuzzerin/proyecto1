@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Document</title>
+
+    <style>
+        .row {
+            margin-top: 20pt;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        .btn {
+            margin-left: 240pt;
+            margin-right: 100pt;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <h2>Ejercicios Taller JS</h2>
+        </div>
+        <div class="row">
+            <label for="">1. Pedir al usuario 2 números y mostrar la suma y la resta de esos dos números.</label>
+            <button onclick="ejercicioUno();" class="btn btn-primary btn-sm"><b>Ejercicio Uno</b></button>
+        </div>
+        <div class="row">
+            <label for="">2. Pedir al usuario 1 números sacar la potencia cuadrada y cubica de un número.</label>
+            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+        </div>
+        <div class="row">
+            <label for="">3. Pedir al usuario el número de niños y niñas de un salón, y sacar porcentaje de niños y niñas en un salon.</label>
+            <button onclick="ejercicioTres();" class="btn btn-primary btn-sm"><b>Ejercicio Tres</b></button>
+        </div>
+        <div class="row">
+            <h4>Ejercicio Cuatro</h4>
+            <label for="">4. Pepito, josé y carlos desean saber cuánto años tienen entre los 3 juntos, pepito tiene 18, josé 20 y carlos 21. mostrar cuál es la sumatoria de la edad de los 3.</label>
+            <div class="col">
+                <label for="Pepito" class="form-label">Pepito</label>
+                <input type="number" id="Pepito" onkeyup="ejercicioCuatro()" value="18">
+            </div>
+            <div class="col">
+                <label for="Jose" class="form-label">Josè</label>
+                <input type="number" id="Jose" onkeyup="ejercicioCuatro()" value="20">
+            </div>
+            <div class="col">
+                <label for="Carlos" class="form-label">Carlos</label>
+                <input type="number" id="Carlos" onkeyup="ejercicioCuatro()" value="21">
+            </div>
+            <div class="col">
+                <label for="Resultado" class="form-label">Resultado</label>
+                <input type="number" id="Resultado" readonly  value="59">
+            </div>
+        </div>
+        <div class="row">
+            <label for="">5. Si pepito tiene 20 años, mostrar en qué año nació pepito.</label>
+            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+        </div>
+        <div class="row">
+            <label for="">6. Si tengo un rectángulo que mide 5 metros de largo por 8 de ancho, mostrar cuál es el área de ese rectángulo.</label>
+            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+        </div>
+        <div class="row">
+            <label for="">7. Maria quiere ir a cine, y la entrada cuesta 8500, pero ella sólo tiene 6700, mostrar en pantalla cuánto dinero le hace falta para entrar a cine.</label>
+            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+        </div>
+        <div class="row">
+            <label for="">8. Juan quiere invitar a sus amigos al estadio para ver fútbol, las boletas cuestan 8000 pesos, pregúntele a Juan cuánto dinero tiene, y muestre en pantalla cuántas personas puede invitar al estadio. (ejemplo: si tiene 20.000 sólo puede invitar a 2 personas).</label>
+            <button onclick="ejercicioDos();" class="btn btn-primary btn-sm"><b>Ejercicio Dos</b></button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function ejercicioUno () {
+        var numeroUno = prompt("Dame un primer número");
+        var numeroDos = prompt("Dame un segundo nùmero");
+
+        var resSuma     = parseFloat(numeroDos)+parseFloat(numeroUno);
+
+        if (numeroDos > numeroUno) {
+            var resResta = numeroDos - numeroUno;
+        } else {
+            var resResta = numeroUno - numeroDos;
+        }
+
+        alert("La suma de sus numeros es: "+resSuma+" y la resta: "+resResta);
+    }
+
+    function ejercicioDos () {
+        var numeroUno = prompt("Dame un primer número");
+
+        var potenciaDos     = Math.pow(numeroUno, 2);
+        var potenciaTres    = Math.pow(numeroUno, 3);
+
+        alert("La potencia cuadrada es: "+potenciaDos+" y su potencia cubica: "+potenciaTres);
+    }
+
+    function ejercicioCuatro () {
+        var pepito  = document.getElementById("Pepito").value;
+        var jose    = document.getElementById("Jose").value;
+        var Carlos  = document.getElementById("Carlos").value;
+
+        document.getElementById("Resultado").value = parseFloat(pepito)+parseFloat(jose)+parseFloat(Carlos);
+    }
+
+</script>
+

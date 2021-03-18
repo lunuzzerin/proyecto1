@@ -1,8 +1,4 @@
-/* Leer 10 enteros, almacenarlos en un vector y determinar en qué posición del vector está el mayor número primo leído.
-
-
-Entrada: 10 enteros
-
+/* 1. pedir tres números; si el primero es negativo, debe imprimir el producto de los tres y si no lo es, imprimirá la suma.
 
 */
 

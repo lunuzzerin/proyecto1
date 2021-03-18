@@ -3,7 +3,7 @@ let cant_numero = 0;
 let temporal = valor;
 let digito;
 
-while (temporal>0) {     
+while (temporal>0) {
     digito = temporal%10;
     temporal = (temporal-digito)/10;
     cant_numero = cant_numero+1;
